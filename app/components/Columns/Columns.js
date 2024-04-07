@@ -41,7 +41,7 @@ export const Columns = () => {
           id={item.id}
           key={item.id}
           // className="benefits-list--item text-[#737373] text-left"
-          className="benefits-list--item text-gray-500 text-left"
+          className="benefits-list--item text-gray-400 text-left"
         >
           <Icon icon={item.icon} className="mb-4 w-10 h-10 my-2" />
           <h3 className="text-xl mb-2 font-medium text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">

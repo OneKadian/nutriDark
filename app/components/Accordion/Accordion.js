@@ -66,7 +66,7 @@ export const Accordion = () => {
         >
           <h2 className="accordion-item--heading mb-0">
             <button
-              className="group relative text-medium flex w-full font-semibold items-center rounded-t-lg border-0 bg-white-900/20 py-4 px-5 text-left text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500"
+              className="group relative text-medium text-gray-400 flex w-full font-semibold items-center rounded-t-lg border-0 bg-white-900/20 py-4 px-5 text-left"
               type="button"
               aria-expanded={accordionItem.isOpen}
               onClick={() => accordionClickHandle(accordionItem.id)}

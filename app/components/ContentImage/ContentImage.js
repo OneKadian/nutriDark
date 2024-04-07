@@ -57,9 +57,7 @@ export const ContentImage = () => {
             <h3 className="mb-6 h4 md:h3 font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">
               {item.title}
             </h3>
-            <p className="font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">
-              {item.content}
-            </p>
+            <p className="font-semibold text-gray-400">{item.content}</p>
             <ul className="process-item--list space-y-3">
               {item.listItems?.length &&
                 item.listItems.map((listItem) => (
