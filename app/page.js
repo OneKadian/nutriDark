@@ -74,7 +74,7 @@ export default function Home() {
                 Master Your Meal Planning and Nutrition Journey
               </PageTitle>
               <Content
-                className="text-center mt-6 font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500"
+                className="text-center mt-6 font-medium text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500"
                 alignment="center"
               >
                 <p>
