@@ -179,7 +179,7 @@ const PriceTable2 = () => {
                 Pricing
               </PageTitle>
               <Content
-                className="text-center mt-6 font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500"
+                className="text-center mt-2 font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500"
                 alignment="center"
               >
                 <p>Buy Once , Launch forever</p>
