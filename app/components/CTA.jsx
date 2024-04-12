@@ -42,7 +42,7 @@ export default function CallToAction() {
                             {CTAcopy.CTADescription}
                         </p> */}
               {/* <Content className="text-left font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500"> */}
-              <Content className="text-left font-semibold text-gray-500 px-2">
+              <Content className="text-left text-gray-500">
                 <p>{CTAcopy.CTADescription}</p>
               </Content>
               {/* <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
