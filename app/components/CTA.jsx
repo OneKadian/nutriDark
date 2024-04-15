@@ -1,15 +1,11 @@
-"use client";
 import Link from "next/link";
 import imagery from "../public/features1.png";
 import Image from "next/image";
-import { Content } from "./Content/Content";
-import { Icon } from "@iconify/react";
-import { Button } from "./Button/Button";
-import { ButtonGroup } from "./Button/ButtonGroup";
-import { BadgeMessage } from "./Badge/BadgeMessage";
-import { BadgeGroup } from "./Badge/BadgeGroup";
-import { BadgeIcon } from "./Badge/BadgeIcon";
-import { MotionBTTContainer } from "./Motion/MotionBTTContainer";
+import Content from "./Content";
+import Button from "./Button";
+import ButtonGroup from "./ButtonGroup";
+import MotionBTTContainer from "./MotionBTTContainer";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function CallToAction() {
   const CTAcopy = {
@@ -72,10 +68,7 @@ export default function CallToAction() {
                     className="inline-flex w-full cursor-pointer items-center justify-center gap-3 rounded-lg px-8 py-2 font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-500 border border-solid border-neutral-400 transition-colors duration-300 md:w-auto"
                   >
                     Get Template
-                    <Icon
-                      icon="material-symbols:arrow-forward-rounded"
-                      className="text-gray-300"
-                    />
+                    <FaArrowRightLong className="text-gray-300" />
                   </Link>
                 </ButtonGroup>
               </div>

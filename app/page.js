@@ -1,31 +1,25 @@
-"use client";
-import Image from "next/image";
-import { HomeBanner } from "./components/Banner/HomeBanner";
-import { Columns } from "./components/Columns/Columns";
-import { ContentImage } from "./components/ContentImage/ContentImage";
-import { Content } from "./components/Content/Content";
-import { Accordion } from "./components/Accordion/Accordion";
-import { MotionBTTContainer } from "./components/Motion/MotionBTTContainer";
-import { BadgeMessage } from "./components/Badge/BadgeMessage";
-import { BadgeGroup } from "./components/Badge/BadgeGroup";
-import { BadgeIcon } from "./components/Badge/BadgeIcon";
-import { SectionContainer } from "./components/Section/SectionContainer";
-import { PageTitle } from "./components/Title/PageTitle";
-import "./global.scss";
-import { Nav } from "./components/Nav/Nav";
-import { CardBody } from "./components/Card/CardBody";
-import { CardGroup } from "./components/Card/CardGroup";
-import { CardHeader } from "./components/Card/CardHeader";
-import { CardImage } from "./components/Card/CardImage";
-import { Card } from "./components/Card/Card";
-import PriceTable2 from "./components/Pricing/DynamicPricingTable";
-import CallToAction from "./components/CTA";
+import Accordion from "./components/Accordion.jsx";
+import HomeBanner from "./components/HomeBanner.jsx";
+import CardBody from "./components/CardBody";
+import CardGroup from "./components/CardGroup";
+import CardHeader from "./components/CardHeader";
+import CardImage from "./components/CardImage";
+import Card from "./components/Card";
 import feature3 from "./public/features3.png";
 import feature4 from "./public/features4.png";
-import { Footer } from "./components/Footer/Footer";
-import "./globals.css";
-import { GridBackgroundDemo } from "./components/GridBackgroundDemo";
+import Columns from "./components/Columns.jsx";
+import ContentImage from "./components/ContentImage.jsx";
+import Footer from "./components/Footer.jsx";
+import PriceTable2 from "./components/PriceTable.jsx";
+import SectionContainer from "./components/SectionContainer.jsx";
+import MotionBTTContainer from "./components/MotionBTTContainer.jsx";
+import BadgeGroup from "./components/BadgeGroup.jsx";
+import BadgeMessage from "./components/BadgeMessage.jsx";
+import PageTitle from "./components/PageTitle.jsx";
+import Content from "./components/Content.jsx";
+import CallToAction from "./components/CTA.jsx";
 
+// import ContentImage from "./components/ContentImage.jsx";
 export default function Home() {
   return (
     <>
@@ -65,7 +59,6 @@ export default function Home() {
             <SectionContainer className="feature-tabs pt-20 ">
               <BadgeGroup alignment="center">
                 <BadgeMessage>More Features</BadgeMessage>
-                <BadgeIcon icon="twemoji:waving-hand" />
               </BadgeGroup>
               <PageTitle
                 className="text-center mx-auto py-1 text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500"
@@ -132,7 +125,6 @@ export default function Home() {
             <SectionContainer id="testimonials" className="benefits">
               <BadgeGroup alignment="left">
                 <BadgeMessage>Testimonials</BadgeMessage>
-                <BadgeIcon icon="twemoji:waving-hand" />
               </BadgeGroup>
               <PageTitle
                 className=" text-transparent py-1 bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500"
