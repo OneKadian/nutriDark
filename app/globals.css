@@ -31,3 +31,18 @@ body {
     text-wrap: balance;
   }
 }
+
+.avatarImage {
+    height: 80px;
+      width: 80px
+}
+.userButtonAvatarImage{
+    height: 80px;
+      width: 80px
+
+}
+
+.cl-internal-11ewti4 {
+  height: 2.5rem;
+  width: 2.5rem;
+}

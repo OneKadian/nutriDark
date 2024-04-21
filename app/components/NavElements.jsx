@@ -51,7 +51,7 @@ const NavElements = () => {
         }`}
         id="navbar-default"
       >
-        <ul className="header-nav--menu">
+        <ul className="header-nav--menu mr-4">
           {navigation.map((item) => (
             <li
               key={item.name}

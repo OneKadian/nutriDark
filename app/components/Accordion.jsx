@@ -66,7 +66,7 @@ const Accordion = () => {
         >
           <h2 className="accordion-item--heading mb-0">
             <button
-              className="group relative text-base text-gray-400 flex w-full font-semibold items-center rounded-t-lg border-0 bg-white-900/20 py-4 px-5 text-left"
+              className="group relative text-base text-gray-400 flex w-full font-normal items-center rounded-t-lg border-0 bg-white-900/20 py-4 px-5 text-left"
               type="button"
               aria-expanded={accordionItem.isOpen}
               onClick={() => accordionClickHandle(accordionItem.id)}
@@ -84,7 +84,7 @@ const Accordion = () => {
               "!visibility block": activeAccordion === accordionItem.id, // Use block class to show content again
             })}
           >
-            <p className="font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-400">
+            <p className="font-medium text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-400">
               {accordionItem.content}
             </p>
           </div>

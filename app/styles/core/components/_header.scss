@@ -11,7 +11,7 @@
     }
 
     .header--container {
-        @apply relative flex items-center justify-between py-3 lg:justify-start;
+        @apply relative flex items-center min-h-[80px] justify-between py-3 lg:justify-start;
         &:after {
             content: "";
             margin-left: var(--page-padding-left);
