@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 import SectionContainer from "./SectionContainer";
@@ -7,8 +6,14 @@ import ButtonGroup from "./ButtonGroup";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Logo from "../public/nutritrack.svg";
 import { FaArrowRight } from "react-icons/fa";
+import { UserButton } from "@clerk/nextjs";
+import { currentUser } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 
-const Header = () => {
+const Header = async () => {
+  const { userId } = auth();
+  const user = await currentUser();
   return (
     <header
       id="header"
@@ -30,18 +35,24 @@ const Header = () => {
           </h1>
         </div>
         <SectionContainer className="flex items-center ml-auto">
+          {/* <Nav userStatus={user} /> */}
+          {/* <Nav userStatus={user} /> */}
           <Nav />
-          <ButtonGroup className="hidden md:block">
-            <a
-              role="button"
-              href="https://github.com/onekadian"
-              // className="btn btn--secondary ml-4"
-              className="inline-flex w-full cursor-pointer items-center justify-center gap-3 rounded-lg px-8 py-2 font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 ml-4 to-neutral-500 border border-solid border-neutral-400 transition-colors duration-300 md:w-auto"
-            >
-              Login
-              {/* <FaArrowRightLong className="text-white" /> */}
-              <FaArrowRight className="text-white" />
-            </a>
+          {/* <ButtonGroup className="hidden md:block"> */}
+          <ButtonGroup className="block">
+            {!user ? (
+              <Link
+                href="/sign-in"
+                // className="btn btn--secondary ml-4"
+                className="inline-flex w-full cursor-pointer items-center justify-center gap-3 rounded-lg px-8 py-2 font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 ml-4 to-neutral-500 border border-solid border-neutral-400 transition-colors duration-300 md:w-auto"
+              >
+                Login
+                {/* <FaArrowRightLong className="text-white" /> */}
+                <FaArrowRight className="text-white " />
+              </Link>
+            ) : (
+              <UserButton afterSignOutUrl="/" />
+            )}
           </ButtonGroup>
         </SectionContainer>
       </SectionContainer>
