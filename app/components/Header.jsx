@@ -33,11 +33,11 @@ const Header = async () => {
             </Link>
           </h1>
         </div>
-        <SectionContainer className="flex items-center ml-auto">
+        <SectionContainer className="flex md:flex-row-reverse items-center ml-auto">
           {/* <Nav userStatus={user} /> */}
           {/* <Nav userStatus={user} /> */}
           {/* <ButtonGroup className="hidden md:block"> */}
-          <ButtonGroup className="block mx-2">
+          <ButtonGroup className="block mx-2 md:mx-0">
             {!user ? (
               <>
                 <Link
