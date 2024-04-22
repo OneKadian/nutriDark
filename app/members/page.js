@@ -398,7 +398,7 @@ const GatedContent = () => {
                 Welcome
               </h1>
               <p class="font-light text-gray-500 md:text-lg xl:text-xl">
-                This is a route made for Players!
+                This is a route made for Players.
               </p>
             </div>
           ) : (

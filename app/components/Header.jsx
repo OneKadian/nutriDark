@@ -36,9 +36,8 @@ const Header = async () => {
         <SectionContainer className="flex items-center ml-auto">
           {/* <Nav userStatus={user} /> */}
           {/* <Nav userStatus={user} /> */}
-          <Nav />
           {/* <ButtonGroup className="hidden md:block"> */}
-          <ButtonGroup className="block">
+          <ButtonGroup className="block mx-2">
             {!user ? (
               <>
                 <Link
@@ -66,6 +65,7 @@ const Header = async () => {
               <UserButton afterSignOutUrl="/" />
             )}
           </ButtonGroup>
+          <Nav />
         </SectionContainer>
       </SectionContainer>
     </header>
