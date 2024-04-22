@@ -214,7 +214,7 @@ const PricingTableToggler = ({ userStatus }) => {
               <div className="flex flex-col items-center justify-center min-h-[100px] space-y-4 bg-opacity-70 p-6 bg-[#fffff14]">
                 <div className="flex flex-row">
                   <div className="flex items-end">
-                    <div className="flex text-left text-[38px] font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500 p-1 leading-6">
+                    <div className="flex text-left text-[34px] lg:text-[38px] font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500 p-1 leading-6">
                       {enabled && option.prices[0].price > 0 ? (
                         <>
                           {/* <span className="mr-2 font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500 line-through"> */}
