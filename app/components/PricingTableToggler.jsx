@@ -227,13 +227,13 @@ const PricingTableToggler = ({ userStatus }) => {
                         `$${option.prices[0].price}`
                       )}
                     </div>
-                    <div className="-mb-[3px] ml-1 text-left text-lg font-medium text-gray-500">
+                    <div className="-mb-[3px] text-left text-base lg:text-lg lg:ml-1 font-medium text-gray-500">
                       <div>/month</div>
                     </div>
                   </div>
                 </div>
                 {option.prices[0].price > 0 ? (
-                  <div className="text-left text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">
+                  <div className="text-left text-xs lg:text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-500">
                     {enabled
                       ? `$${option.prices[1].price} will be charged when annual`
                       : "when charged monthly"}
