@@ -8,6 +8,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { FaArrowRight } from "react-icons/fa";
 import { useMemo } from "react";
 import { usePathname } from "next/navigation";
+import { RxCross1 } from "react-icons/rx";
 
 const navigation = [
   { name: "Features", href: "/#features" },
@@ -53,14 +54,15 @@ const Nav = ({ userStatus }) => {
           onClick={() => setIsNavOpen(!isNavOpen)}
           data-collapse-toggle="navbar-default"
           type="button"
-          className="mobile-menu text-white"
+          className={`mobile-menu text-white`}
+          // className={`mobile-menu text-white ${isNavOpen ? "hidden" : "block"}`}
           aria-controls="navbar-dropdown"
           aria-expanded="false"
         >
           <span className="sr-only">Open main menu</span>
           <RxHamburgerMenu
             icon="material-symbols:menu-rounded"
-            className="h-6 w-auto text-white"
+            className="h-10 w-auto text-white"
           />
         </button>
         {/* {!userStatus && <UserButton afterSignOutUrl="/" />} */}
@@ -72,6 +74,12 @@ const Nav = ({ userStatus }) => {
           id="navbar-default"
         >
           <ul className="header-nav--menu mr-4">
+            <div className="flex justify-end px-4">
+              <RxCross1
+                className="text-2xl cursor-pointer md:hidden"
+                onClick={() => setIsNavOpen(!isNavOpen)}
+              />
+            </div>
             {memoizedNavigation.map((item) => (
               <li
                 key={item.name}
